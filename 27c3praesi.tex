@@ -66,14 +66,14 @@
     \end{columns}
     \end{frame}
 \section{How it came together}
-\begin{frame}{how it came together}
+\begin{frame}{How it came together}
 
 \begin{columns}%[T]
 \begin{column}{3.5cm}
         \begin{figure}
           \begin{center}
           \includegraphics[width=3cm]{bilder/ddc_har.jpg}
-          \caption{moodlamp}
+          \caption{Moodlamp}
          % members' RGB-LED project, \\were in use for the 3c
           \end{center}
         \end{figure}
@@ -82,7 +82,7 @@
         \begin{figure}
           \begin{center}
           \includegraphics[width=3cm]{bilder/hertie.jpg}
-          \caption{puerto giesing}
+          \caption{Puerto Giesing}
           %old office building,\\used by artists before beeing torn down
           \end{center}
         \end{figure}
@@ -91,7 +91,7 @@
         \begin{figure}
           \begin{center}
           \includegraphics[width=3cm]{bilder/blinkenlights.jpg}
-          \caption{blinkenlights}
+          \caption{Blinkenlights}
           %well known project transforming buildings into b\textbackslash w displays
           \end{center}
         \end{figure}
@@ -101,7 +101,7 @@
 \begin{column}{3.5cm}
         \begin{figure}
           \begin{center}
-          members' RGB-LED project, \\were in use for the 3c
+          Members' RGB-LED project, \\were in use for the 3c
           \end{center}
         \end{figure}
  
@@ -109,7 +109,7 @@
 \begin{column}{3.5cm}
         \begin{figure}
           \begin{center}
-          old office building,\\used by artists before beeing torn down
+          Old office building,\\used by artists before beeing torn down
           \end{center}
         \end{figure}
  
@@ -117,7 +117,7 @@
 \begin{column}{3.5cm}
         \begin{figure}
           \begin{center}
-          well known project transforming buildings into b\textbackslash w displays
+          Well known project transforming buildings into b\textbackslash w displays
           \end{center}
         \end{figure}
  
@@ -137,9 +137,9 @@
       \end{column}
       \begin{column}{5cm}
         \begin{itemize}
-        \item not needed ways of communication removed (ir, usb, \ldots)
-        \item switching regulator added for higher supply voltage (-> lower supply current)
-        \item ethernet connectors replace screw terminals for faster and more stable(?) connections 
+        \item Not needed ways of communication removed (ir, usb, \ldots)
+        \item Switching regulator added for higher supply voltage (-> lower supply current)
+        \item Ethernet connectors replace screw terminals for faster and more stable(?) connections 
         \end{itemize}
       \end{column}
       \begin{column}{3.5cm}
@@ -151,7 +151,7 @@
      \end{column}
     \end{columns}
   \end{frame}
-  \begin{frame}{the lamp - outline}
+  \begin{frame}{The lamp - Outline}
     \begin{figure}
     \begin{center}
     \includegraphics[width=9cm]{bilder/led_12v_rs485.pdf}
@@ -164,7 +164,7 @@
   \begin{columns}
     \begin{column}{4cm}
      \begin{block}{ Puerto Giesing}
-     two supply units are used to supply one row
+     Two supply units are used to supply one row
      \end{block}
     \end{column}
     \begin{column}{7cm}
@@ -177,7 +177,7 @@
     \begin{column}{4cm}
     \vskip 0.4cm 
     \begin{block}{27c3}
-     one supply unit is used to supply two columns 
+     One supply unit is used to supply two columns 
     \end{block}
     \end{column}
     \begin{column}{7cm}
@@ -192,7 +192,7 @@
     \begin{itemize}
       \item Dataexchange over ethernet cables 
       \item 3 conductor pairs reserved for power supply 
-      \item remaining one used for data
+      \item Remaining one used for data
     \end{itemize}
     \begin{columns}[T]
       \begin{column}{7cm}
@@ -211,12 +211,48 @@
   \end{frame}
 % Was noch fehlt: wie wird das rs485 @congress verteilt
 % evtl alles 27c3zeug in section acab@27c3
+  \begin{frame}{RS485}
+    \begin{columns}
+       \begin{column}{6cm}
+        \begin{figure}
+        \includegraphics[width=6cm, clip, trim= 1cm 3cm 4cm 2.5cm]{bilder/laptop.pdf}
+        \end{figure}
+      \end{column}
+      \begin{column}{5cm}
+      \begin{block}{RS485}
+        \begin{itemize}
+        \item Versatile communication standard
+        \item Vonnects several devices in bus structure
+        \item Communication over long distances
+        \end{itemize}
+      \end{block}
+     \end{column}
+   \end{columns}
+  \end{frame}
+
 \section{Software}
 \section{Interaction}
     \subsection{acabed}
     \subsection{Activating Animations by sms}
     \subsection{blubbtris by dasAquarium}
 \section{acab@27c3}
+
 \section{acab anywhere}
 \section{Contact overview}
+\begin{frame}{Contact overview}
+  \begin{block}{Information}
+    \begin{itemize}
+    \item acab.muc.ccc.de
+    \item muc.ccc.de
+    \item info@muc.ccc.de
+    \item presse@muc.ccc.de
+    \end{itemize}
+  \end{block}
+  \begin{block}{Code}
+    \begin{itemize}
+    \item https://github.com/muccc/acabed
+    \item https://github.com/muccc/gigargoyle
+    \end{itemize}
+  \end{block}
+\end{frame}
 \end{document}
