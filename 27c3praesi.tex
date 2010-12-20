@@ -12,7 +12,7 @@
 %\usetheme{Warsaw}
 \title[AllColoursAreBeautiful]{AllColoursAreBeautiful\\ interactive lightinstallation inspired by blinkenlights}
 \author[fpletz, lilafisch]{fpletz <\url{fpletz@muc.ccc.de}>,\\ lilafisch <\url{lilafisch@muc.ccc.de}>}
-\institute[$\mu c^{3}$]{CCC Munich ($\mu c^{3}$)}
+\institute[$\mu c^{3}$]{$\mu c^{3}$ - CCC Munich }
 \date{2010-12-29 - Day 3 @ 27C3}
 \begin{document}
 
@@ -161,29 +161,19 @@
   \end{frame}
 \subsection{Powersupply}
   \begin{frame}{Powersupply}
-  At 12V supplyvoltage the current from one power supply unit suffices for 12 lamps.
+  At 12V supplyvoltage the current from one power supply unit suffices for 16 lamps.
   \begin{columns}
     \begin{column}{4cm}
      \begin{block}{ Puerto Giesing}
-     Two supply units are used to supply one row
+     Two supply units are used to supply the 24 lamps of one row
+     \end{block}
+     \begin{block}{27c3}
+     One supply unit is used for the 16 lamps of one row
      \end{block}
     \end{column}
     \begin{column}{7cm}
     \begin{figure}
-    \includegraphics[width=6cm, clip, trim= 2.5cm 4.6cm 0.5cm 4cm]{bilder/12lampen.pdf}
-    \end{figure}
-    \end{column}
-  \end{columns}
-  \begin{columns}[T]
-    \begin{column}{4cm}
-    \vskip 0.4cm
-    \begin{block}{27c3}
-     One power supply unit is used to power two columns
-    \end{block}
-    \end{column}
-    \begin{column}{7cm}
-    \begin{figure}
-    \includegraphics[width=4cm, clip, trim= 4cm 5cm 7cm 4cm]{bilder/6lampen.pdf}
+    \includegraphics[width=7cm, clip, trim= 2.5cm 4.6cm 0.5cm 4cm]{bilder/12lampen.pdf}
     \end{figure}
     \end{column}
   \end{columns}
@@ -195,23 +185,11 @@
       \item 3 conductor pairs reserved for power supply
       \item Remaining one used for data
     \end{itemize}
-    \begin{columns}[T]
-      \begin{column}{7cm}
-        \hskip 2.6cm
-        Puerto Giesing
-        \vskip 0.2cm
-        \includegraphics[width=7.3cm, clip, trim= 0cm 4.6cm 0.5cm 4cm]{bilder/12lampen_rs485.pdf}
-      \end{column}
-      \begin{column}{5cm}
-        \hskip 2.0cm
-        27c3
-        \vskip 0.7cm
-         \includegraphics[width=5.5cm, clip, trim= 2.5cm 8cm 3.5cm 4cm]{bilder/6lampen_rs485.pdf}
-      \end{column}
-    \end{columns}
+      \begin{figure}
+        \includegraphics[width=8cm, clip, trim= 0cm 4.6cm 0.5cm 4cm]{bilder/12lampen_rs485.pdf}
+        \caption{Puerto Giesing}
+      \end{figure}
   \end{frame}
-% Was noch fehlt: wie wird das rs485 @congress verteilt
-% evtl alles 27c3zeug in section acab@27c3
   \begin{frame}{RS485}
     \begin{columns}
        \begin{column}{6cm}
