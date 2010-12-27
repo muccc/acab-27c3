@@ -10,22 +10,31 @@
 
 \usetheme{Frankfurt}
 %\usetheme{Warsaw}
-\title[AllColoursAreBeautiful]{AllColoursAreBeautiful\\ interactive lightinstallation inspired by blinkenlights}
+\title[AllColoursAreBeautiful]{AllColoursAreBeautiful\\
+{\small interactive lightinstallation inspired by blinkenlights}
+}
 \author[fpletz, lilafisch]{fpletz <\url{fpletz@muc.ccc.de}>,\\ lilafisch <\url{lilafisch@muc.ccc.de}>}
 \institute[$\mu c^{3}$]{$\mu c^{3}$ - CCC Munich }
-\date{2010-12-29 - Day 3 @ 27C3}
+\date{2010-12-27 - Day 1 @ 27C3}
+
 \begin{document}
 
+{
+%\usebackgroundtemplate{\includegraphics[width=\paperwidth]{bilder/behindthescreen.jpg}}
 \begin{frame}
+\thispagestyle{empty}
 \titlepage
 \end{frame}
+}
 
 \begin{frame}
 \frametitle{Fahrplan}
 \tableofcontents
 \end{frame}
+
 \setlength\fboxsep{5pt}
 \setlength\fboxrule{0pt}
+
 \section{$\mu c^{3}$}
   \begin{frame}{$\mu c^{3}$}
     \begin{columns}%[t]
@@ -93,7 +102,7 @@
           \begin{center}
           \includegraphics[width=3cm]{bilder/blinkenlights.jpg}
           \caption{Blinkenlights}
-          %well known project transforming buildings into b\textbackslash w displays
+          %well known project transforming buildings into b/w displays
           \end{center}
         \end{figure}
 \end{column}
@@ -102,7 +111,7 @@
 \begin{column}{3.5cm}
         \begin{figure}
           \begin{center}
-          Members' RGB-LED project, \\were in use for the 3c
+          $\mu c^3$'s RGB-LED project, i.e. in use for the 3c
           \end{center}
         \end{figure}
 
@@ -126,7 +135,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}{unexpected challenges}
+\begin{frame}{Unexpected Challenges}
   \begin{columns}
     \begin{column}{6cm}
         \includegraphics[height=4cm]{bilder/ipick.jpg}\\
@@ -171,8 +180,8 @@
     \end{center}
     \end{figure}
   \end{frame}
-\subsection{Powersupply}
-  \begin{frame}{Powersupply}
+\subsection{Power Supply}
+  \begin{frame}{Power Supply}
   At 24V supply voltage one power supply unit suffices for 16 lamps.
   \begin{columns}
     \begin{column}{4cm}
@@ -227,39 +236,127 @@
   \end{frame}
 
 \section{Software}
-\begin{frame}{Put together}
+
+\begin{frame}{Software Components}
+
+    \includegraphics[height=\paperheight/1.1]{bilder/software.pdf}
+
+\end{frame}
+
+\begin{frame}{Software Components (2)}
+    \begin{columns}
+	\begin{column}{5cm}
+	    \begin{block}{acabed}
+		\begin{itemize}
+		    \item Webeditor
+		    \item Python (Django)
+		    \item JavaScript (Mootools)
+		\end{itemize}
+	    \end{block}
+	    \begin{block}{Streaming Clients}
+		\begin{itemize}
+		    \item Roll your own interactive live streams
+		    \item Python Library available
+		\end{itemize}
+	    \end{block}
+	    \begin{block}{acabplayer}
+		\begin{itemize}
+		    \item Live Viewer
+		    \item C, SDL
+		\end{itemize}
+	    \end{block}
+	\end{column}
+	\begin{column}{5cm}
+	    \begin{block}{acabspool}
+		\begin{itemize}
+			\item Queueing/Streaming Manager
+			\item Python
+			\item Manages streaming from
+			    database or direct streamers
+		\end{itemize}
+	    \end{block}
+	    \begin{block}{gigargoyle}
+		\begin{itemize}
+		    \item Display ``Driver''
+		    \item C
+		    \item Gets raw animations, puts them on the screen
+		\end{itemize}
+	    \end{block}
+	\end{column}
+    \end{columns}
+\end{frame}
+
+\section{Putting it all together}
+
+\begin{frame}{Putting it all together}
   \begin{columns}
     \begin{column}{10cm}
       \includegraphics[width=10cm]{bilder/tests.jpg}
     \end{column}
   \end{columns}
 \end{frame}
-\begin{frame}{Put together}
+
+\begin{frame}{Putting it all together}
   \begin{columns}
     \begin{column}{5cm}
-      \includegraphics[width=5.5cm, clip, trim= 0 0 0 0]{bilder/fill.png}
-% ACHTUNG aktuell falsches Bild, teil des codes fehlt
+      \includegraphics[width=5cm]{bilder/fill.png}
     \end{column}
     \begin{column}{5cm}
       \includegraphics[width=5.5cm]{bilder/fail.png}
     \end{column}
   \end{columns}
 \end{frame}
-\section{Interaction}
-    \subsection{acabed}
-    \subsection{Activating Animations by sms}
-    \subsection{blubbtris by dasAquarium}
+
+\begin{frame}{Putting it all together}
+  \begin{columns}
+    \begin{column}{10cm}
+      \includegraphics[width=10cm]{bilder/terminal.jpg}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Interaction}
+    \begin{block}{Touch-Terminal}
+	\begin{itemize}
+	    \item Passersby could create animations on touch screen
+		terminal with acabed
+	    \item Donation
+	\end{itemize}
+    \end{block}
+
+    \begin{block}{SMS}
+	\begin{itemize}
+	    \item Text Message could trigger animation play
+	    \item \texttt{play ID}
+	\end{itemize}
+    \end{block}
+    
+    \begin{block}{blubbtris by Aquarium}
+	\begin{itemize}
+	    \item Live Tetris Game
+	    \item indepentently developed
+	\end{itemize}
+    \end{block}
+\end{frame}
+
+
 \section{acab@27c3}
   \begin{frame}{acab@27c3}
-    \begin{columns}
-      \begin{column}{9cm}
+      \begin{block}{Setup}
             \begin{itemize}
-               \item Plastik boxes instead of windows
-               \item 6 lines with 16 boxes (text is possible)
-               \item -> 6 buses, 16 lamps powered by one powersupply
-               \end{itemize}
-      \end{column}
-   \end{columns}
+               \item Plastic boxes instead of windows
+               \item 6 rows with 16 boxes (makes text is possible)
+               \item 6 busses, every bus with 16 lamps powered by one power supply
+            \end{itemize}
+	\end{block}
+	\begin{block}{Play with me!}
+	    \begin{itemize}
+		\item Create animations with our webeditor:
+		    \url{http://http://81.163.62.30/}
+		\item Code games, visualizations with our Python client
+		    library: \url{https://github.com/muccc/abracadabra}
+	    \end{itemize}
+	\end{block}
   \end{frame}
 \section{acab anywhere}
   \begin{frame}{acab anywhere}
@@ -296,8 +393,8 @@
       \begin{block}{finances}
         \begin{itemize}
         \item Start early\ldots
-        \item Support from the city (or other funds)
-        \item Private donations -> 'Pixelpaten' (godfathers for lamps)
+        \item Support from municipal sources (or other funds)
+        \item Private donations: 'Pixelpaten' (godfathers for lamps)
         \end{itemize}
       \end{block}
     \end{column}
@@ -311,7 +408,7 @@
       \begin{block}{Time}
         \begin{itemize}
         \item Don't underestimate lead times for components 
-        \item Leave time for some experiments
+        \item Leave enough time for some experiments
         \end{itemize}
       \end{block}
     \end{column}
@@ -322,15 +419,20 @@
 \end{frame}
 
 \section{Contact}
-\begin{frame}{Contact overview}
+\begin{frame}{Contact Overview}
+  \begin{block}{IRC}
+    \begin{itemize}
+	\item {\tt \#acab @ ray.blafasel.de}
+    \end{itemize}
+  \end{block}
   \begin{block}{Information}
     \begin{columns}
       \begin{column}{6.5cm}
         \begin{itemize}
         \item \url{http://acab.muc.ccc.de/}
         \item \url{http://muc.ccc.de/}
-        \item \url{info@muc.ccc.de}
-        \item \url{presse@muc.ccc.de}
+	\item \url{info@muc.ccc.de}
+	\item \url{presse@muc.ccc.de}
         \end{itemize}
       \end{column}
       \begin{column}{4cm}
@@ -340,8 +442,7 @@
   \end{block}
   \begin{block}{Code}
     \begin{itemize}
-      \item \url{https://github.com/muccc/acabed}
-      \item \url{https://github.com/muccc/gigargoyle}
+      \item \url{https://github.com/muccc/}
     \end{itemize}
   \end{block}
 \end{frame}
